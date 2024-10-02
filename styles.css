@@ -42,7 +42,7 @@ body {
     100% { opacity: 1; }
 }
 
-/* Estilo de título con degradado */
+/* Estilo de título con degradado y texto más fino */
 .title {
     font-size: 64px; /* Título más grande */
     background: linear-gradient(45deg, #ff4ecd, #9d00ff);
@@ -50,6 +50,7 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     margin: 20px 0;
+    font-weight: 300; /* Fuente más fina */
     animation: fadeIn 2s ease-in-out 1s forwards;
 }
 
