@@ -1,0 +1,96 @@
+
+/* Reset de márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración básica del body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1d, #2d142c);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Efecto de movimiento del Gengar */
+.gengar-move {
+    width: 150px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animaciones generales */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Estilo de título con degradado */
+.title {
+    font-size: 48px;
+    background: linear-gradient(45deg, #ff4ecd, #9d00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+}
+
+/* Estilo de subtítulo */
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Colores destacados */
+.highlight {
+    color: #7f5af0;
+}
+
+/* Botones */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.btn:hover {
+    background-color: #4a3f62;
+    border-color: #7f5af0;
+    transform: scale(1.05);
+}
+
+/* Grupo de botones */
+.btn-group {
+    margin-top: 10px;
+}
