@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HK | Supplier</title>
+    <title>MAIN SHOP</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Contenedor para el fondo de partículas -->
+    <div id="particles-js"></div>
+
     <div class="container">
         <div class="header">
             <img src="gengar.png" alt="Gengar" class="logo gengar-move">
-            <h1 class="title">HK | Supplier</h1>
-            <p class="subtitle">serving <span class="highlight">520</span> members with <span class="highlight">84</span> reviews and <span class="highlight">234</span> customers</p>
+            <h1 class="title">MAIN SHOP</h1>
+            <p class="subtitle">serving <span class="highlight">2090</span> members with <span class="highlight">2222</span> reviews and <span class="highlight">763</span> customers</p>
         </div>
         <div class="buttons">
             <a href="#" class="btn appear">Store Link</a>
@@ -26,6 +29,115 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Script para cargar Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        /* Configuración para el fondo de partículas */
+        particlesJS('particles-js',
+        {
+          "particles": {
+            "number": {
+              "value": 100,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 6,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        });
+    </script>
 </body>
 </html>
