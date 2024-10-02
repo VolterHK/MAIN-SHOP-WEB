@@ -1,4 +1,3 @@
-
 /* Reset de márgenes */
 * {
     margin: 0;
@@ -27,7 +26,7 @@ body {
 
 /* Efecto de movimiento del Gengar */
 .gengar-move {
-    width: 150px;
+    width: 200px; /* Tamaño del Gengar más grande */
     animation: float 3s ease-in-out infinite;
 }
 
@@ -45,7 +44,7 @@ body {
 
 /* Estilo de título con degradado */
 .title {
-    font-size: 48px;
+    font-size: 64px; /* Título más grande */
     background: linear-gradient(45deg, #ff4ecd, #9d00ff);
     background-clip: text;
     -webkit-background-clip: text;
@@ -56,8 +55,8 @@ body {
 
 /* Estilo de subtítulo */
 .subtitle {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 22px; /* Texto más grande */
+    margin-bottom: 30px;
 }
 
 /* Colores destacados */
@@ -67,15 +66,15 @@ body {
 
 /* Botones */
 .buttons {
-    margin-top: 20px;
+    margin-top: 30px; /* Más espacio entre botones */
 }
 
 .btn {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 15px 30px; /* Botones más grandes */
+    margin: 10px;
     text-decoration: none;
     border-radius: 8px;
     border: 2px solid rgba(255, 255, 255, 0.3);
@@ -92,5 +91,5 @@ body {
 
 /* Grupo de botones */
 .btn-group {
-    margin-top: 10px;
+    margin-top: 20px;
 }
