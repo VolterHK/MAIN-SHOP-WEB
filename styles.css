@@ -8,6 +8,7 @@
 /* Configuración básica del body */
 body {
     font-family: Arial, sans-serif;
+    background-color: #1a1a1d;
     color: white;
     display: flex;
     justify-content: center;
@@ -17,20 +18,18 @@ body {
     position: relative;
 }
 
-/* Estilos para el iframe del fondo */
-#background-frame {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Estilos para el fondo de partículas */
+#particles-js {
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     z-index: -1; /* Asegura que el fondo esté detrás del contenido */
-    pointer-events: none; /* Hace que el iframe no sea interactivo */
 }
 
 .container {
     text-align: center;
-    z-index: 1; /* Para que el contenido esté encima del fondo */
 }
 
 /* Efecto de movimiento del Gengar */
