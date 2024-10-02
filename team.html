@@ -28,13 +28,20 @@
                 <h2 class="member-name">Bounix</h2>
                 <p class="member-role">Manager</p>
             </div>
-              <div class="member">
+            <div class="member">
                 <h2 class="member-name">Zeckz_0</h2>
                 <p class="member-role">Manager</p>
             </div>
             <!-- Agrega más miembros según sea necesario -->
         </div>
     </div>
+
+    <!-- Script para redirigir si hay una barra al final de la URL -->
+    <script>
+        if (window.location.pathname.endsWith('/')) {
+            window.location.href = window.location.href.slice(0, -1);
+        }
+    </script>
 
     <!-- Script para cargar Particles.js -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
