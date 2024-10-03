@@ -20,6 +20,21 @@
         }
         .header {
             text-align: left;
+            position: relative;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .header .back-button {
+            position: absolute;
+            top: 20px;
+            left: 70px;
+            font-size: 24px;
+            cursor: pointer;
         }
         .content {
             text-align: left;
@@ -28,7 +43,9 @@
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
-            color: #ccc;
+            color: #fff;
+            text-decoration: underline;
+            border-bottom: 1px solid #fff;
         }
         .member-role {
             font-size: 16px;
@@ -43,6 +60,8 @@
 
     <div class="container">
         <div class="header">
+            <img src="gengar.png" alt="Gengar">
+            <div class="back-button">&#8592;</div>
             <h1 class="title">Terms of Service</h1>
             <p class="subtitle">Last updated and effective: July 30, 2024, 2:57 PM CET</p>
         </div>
@@ -68,7 +87,7 @@
             <p class="member-role">• Any refunds make to your external wallet is possible but with 40% refund charges fees, but this is only the case if you have deposited money into your balance.</p>
 
             <h2 class="member-name">Server Boosts Policy:</h2>
-                      <p class="member-role">• We do not provide warranties for our tokens or server boosts. All tokens and boosts are guaranteed to be fully functional at the time of delivery.</p>
+            <p class="member-role">• We do not provide warranties for our tokens or server boosts. All tokens and boosts are guaranteed to be fully functional at the time of delivery.</p>
             <p class="member-role">• In the event of Discord mass revoking or banning booster tokens, we are unable to replace or refund any items, as this is beyond our control.</p>
             <p class="member-role">• We are not responsible for tokens or boosts being removed from servers due to anti-raid bots or other mechanisms. Replacement or refunds will not be provided in such cases.</p>
 
@@ -112,7 +131,7 @@
             <p class="member-role">This Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our services.</p>
 
             <h2 class="member-name">Information We Collect:</h2>
-                       <p class="member-role">• Ticket Transcripts: When you submit a ticket to our support team, we collect and store the transcripts of your communication with us. This includes any messages, attachments, or other information provided in the ticket.</p>
+            <p class="member-role">• Ticket Transcripts: When you submit a ticket to our support team, we collect and store the transcripts of your communication with us. This includes any messages, attachments, or other information provided in the ticket.</p>
             <p class="member-role">• Previous Purchases: We retain records of previous purchases made by your Discord account for administrative and customer support purposes.</p>
             <p class="member-role">• Discord ID: Your Discord ID is collected to help us identify and communicate with you effectively, especially in relation to your support tickets and previous purchases.</p>
             <p class="member-role">• Pictures: Any pictures or attachments you send in support tickets are stored to assist with resolving your inquiries and providing appropriate assistance.</p>
@@ -184,81 +203,81 @@
               "anim": {
                 "enable": false,
                 "speed": 1,
-                           "opacity_min": 0.1,
-              "sync": false
-            }
-          },
-          "size": {
-            "value": 3,
-            "random": true,
-            "anim": {
-              "enable": false,
-              "speed": 40,
-              "size_min": 0.1,
-              "sync": false
-            }
-          },
-          "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
-          },
-          "move": {
-            "enable": true,
-            "speed": 6,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "attract": {
-              "enable": false,
-              "rotateX": 600,
-              "rotateY": 1200
-            }
-          }
-        },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "repulse"
-            },
-            "onclick": {
-              "enable": true,
-              "mode": "push"
-            },
-            "resize": true
-          },
-          "modes": {
-            "grab": {
-              "distance": 400,
-              "line_linked": {
-                "opacity": 1
+                "opacity_min": 0.1,
+                "sync": false
               }
             },
-            "bubble": {
-              "distance": 400,
-              "size": 40,
-              "duration": 2,
-              "opacity": 8,
-              "speed": 3
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
             },
-            "repulse": {
-              "distance": 200
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
             },
-            "push": {
-              "particles_nb": 4
-            },
-            "remove": {
-              "particles_nb": 2
+            "move": {
+              "enable": true,
+              "speed": 6,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
             }
-          }
-        },
-        "retina_detect": true
-      });
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        });
     </script>
 </body>
 </html>
